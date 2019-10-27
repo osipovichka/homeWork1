@@ -1,0 +1,35 @@
+body{
+    font-size: 20px;
+}
+
+div {
+    margin: 15px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+li{
+    list-style-type: decimal;
+}
+
+input[type='text'] {
+    width: 20%;
+    border: 2px solid #0a0909;
+    font-size: 15px;
+}
+
+input[type='button'] {
+    border: 2px solid #728de7;
+    background: #728de7;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+select{
+    font-size: 15px;
+}
