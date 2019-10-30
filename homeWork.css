@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
+
 body{
-    font-size: 20px;
+    font-family: 'Literata', serif;
+    font-size: 15px;
+    font-weight: bold;
+    width: 70%;
+    border: 1px solid black;      
+}
+
+h1{
+    text-align: center;
 }
 
 div {
@@ -11,25 +21,181 @@ img {
     height: 200px;
     float: left;
     margin-right: 15px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
 }
+
+a{
+    color: rgb(22, 111, 245);
+    margin: 0 15px 0 15px;
+}
+
+label{
+    font-weight: normal;
+}
+
+.form {
+    width: 40%;
+    padding: 5px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    font-size: 15px;
+    margin: 0 15px 0 15px;
+    outline: none;
+}
+
+.experience{
+    width: 40px;
+    padding: 5px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+    outline: none;
+}
+
+.date{
+    width: 14%;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    outline: none;
+}
+
+input[type=date]::-webkit-inner-spin-button{
+    display: none;
+}
+  
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 7px;
+    height: 24px;
+    width: 24px;
+    background: white;
+    color: #00FFA1;
+    border-radius: 20%;
+    border: 0.5px solid black;
+    cursor: pointer;
+    outline: none;
+    margin-left: 15px;
+  }
+
+  .option-input.radio{
+      border-radius: 50%;
+  }
+
+  .option-input:hover {
+    background: white;
+  }
+
+  .option-input:checked {
+    background: white;
+  }
+
+  .option-input:checked::before {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
+  }
 
 li{
     list-style-type: decimal;
-}
-
-input[type='text'] {
-    width: 20%;
-    border: 2px solid #0a0909;
-    font-size: 15px;
+    font-weight: normal;
 }
 
 input[type='button'] {
-    border: 2px solid #728de7;
-    background: #728de7;
-    border-radius: 10px;
+    height: 27px;
+    width: 170px;
+    background: linear-gradient(to top, #00FFA1, #00FFFF);
+    border: none;
+    border-radius: 15px;
     font-size: 15px;
 }
 
-select{
-    font-size: 15px;
+caption{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
 }
+
+table { 
+    width: 100%; 
+    border: 1px solid black;
+    border-collapse: collapse; 
+   }
+   th { 
+    height: 50px;
+    text-align: left;
+    font-weight: bold; 
+    padding: 5px;
+    border: 1px solid black;
+    outline: none;
+   }
+   td { 
+    height: 50px;
+    padding: 5px; 
+    border: 1px solid black;
+   }
+
+   .namberCell{
+       text-align: center;
+   }
+
+   input[type=submit]{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(138, 136, 136);
+    text-shadow: 1px 1px rgba(0,0,0,.3);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to top, #00FFA1, #00FFFF);
+    box-shadow:
+     inset 0 0 3px 1px #00FFFF,
+     inset #00FFFF -5px -5px 8px 5px,
+     inset #00FFA1 5px 5px 8px 5px,
+     1px 1px 1px #00FFA1,
+     -2px -2px 5px #00FFFF;
+    transition: 2s;
+    outline: none;
+    margin-left: 40%;
+    border: none;
+   }
+
+   input[type=submit]:hover {
+    color: rgb(138, 136, 136);
+    background: #00FFFF;
+  }
+
+  input[type=submit]:active {
+    background: rgb(0,110,0);
+    box-shadow:
+     inset 0 0 5px 3px #00FFFF,
+     inset #00FFFF -5px -5px 8px 5px,
+     inset #00FFA1 5px 5px 8px 5px,
+     1px 1px 1px r#00FFA1,
+     -2px -2px 5px #00FFFF;
+  }

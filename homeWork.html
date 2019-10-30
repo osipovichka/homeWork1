@@ -11,84 +11,114 @@
 
 <body>
     <h1>Вакансия Junior Frontend Developer</h1>
-    <div>
-        <img src="https://img.icons8.com/ios-glyphs/452/user--v1.png" alt="фото">
-        <p>ФИО:</p>
-        <a href="">Сcылка на репозиторий в Github</a>
-        <p>Опыт работы:</p>
-    </div>
-    <div  style="clear:both"></div>
-    <div>
-        Дата собиседования: <input type="date">
-    </div>
-    <div>
-        Уровень английского:
-        <input type="radio"> <label for="">Плохо</label>
-        <input type="radio"> <label for="">Средне</label>
-        <input type="radio"> <label for="">Хорошо</label>
-        <input type="radio"> <label for="">Превосходно</label></div>
-    <div>
-        Ключевые навыки:
-        <ul>
-            <li>HTML</li>
-            <li>CSS/LESS</li>
-            <li>JavaScript</li>
-            <li>...</li>
-        </ul>
-        <input type="text" name="" id="" placeholder='введите навык...'>
-        <input type="button" value="Добавить в список">
-
-    </div>
-    <div>Коммуникабельность:
-        <select name="" id="">
-            <option disabled selected>Выберите значение</option>
-            <option id="">Люблю поговорить</option>
-            <option id="">Не против поговорить</option>
-            <option id="">Не трогайте меня</option>
-        </select>
-    </div>
-    <div>
-        Желаемая з/п
-        <input type="text" placeholder='введите значение...'>
-    </div>
-    <div>
-        Подходит по критериям:
+    <form action="">
         <div>
-            <input type="checkbox" name="" id="english">
-            <label for="english">Знание английского</label>
-            <input type="checkbox" name="" id="zp">
-            <label for="zp">Оклад</label>
-            <input type="checkbox" name="" id="skils">
-            <label for="skils">Навыки</label>
-            <input type="checkbox" name="" id="mark">
-            <label for="mark">Сразу видно что, свой человек</label>
+            <img src="https://img.icons8.com/ios-glyphs/452/user--v1.png" alt="фото">
+            <div>
+                <input class="form" type="text" placeholder="Фамилия Имя Отчество">
+            </div>
+            <div>
+                <input class="form" type="email" placeholder='Адрес электронной почты'>
+            </div>
+            <div>
+                <input class="form" type="tel" pattern="\(\d\d\d\) ?\d\d\d-\d\d-\d\d"
+                    placeholder="Номер телефона:(###) ###-##-##" />
+            </div>
+            <a href="">Сcылка на репозиторий в Github</a><br>
+            <div>Опыт работы:
+                <input class="experience" type="number" placeholder="1" min="1" step="1">год/лет
+                <input class="experience" type="number" placeholder='4' min="1" max="11" step="1">мес.
+            </div>
         </div>
-    </div>
-    <div>
-        <table border="1px">
-            <caption>Образование, курсы и т.п.</caption>
-            <tr>
-                <th>№</th>
-                <th>Срок обучения</th>
-                <th>Наименование учебного заведения, курсов и т.п.</th>
-            </tr>
-            <tr>
-                <th>1</th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>3</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </table>
-    </div>
+
+        <div>
+            Дата собиседования:
+            <input class="date" type="date" value="2019-10-30">
+        </div>
+        <div>
+            Уровень английского:
+            <input class="option-input radio" type="radio" name="english" id="badly">
+            <label for="badly">Плохо</label>
+
+            <input class="option-input radio" type="radio" name="english" id="medium">
+            <label for="medium">Средне</label>
+
+            <input class="option-input radio" type="radio" name="english" id="good">
+            <label for="good">Хорошо</label>
+
+            <input class="option-input radio" type="radio" name="english" id="excellent">
+            <label for="excellent">Превосходно</label>
+        </div>
+        <div>
+            Ключевые навыки:
+            <ul>
+                <li>HTML</li>
+                <li>CSS/LESS</li>
+                <li>JavaScript</li>
+                <li>...</li>
+            </ul>
+            <input class='form' type="text" name="" id="" placeholder='введите навык...'>
+            <input type="button" value="Добавить в список">
+
+        </div>
+        <div>
+            Коммуникабельность:
+            <select class="form" name="" id="">
+                <option disabled selected>Выберите значение</option>
+                <option id="">Люблю поговорить</option>
+                <option id="">Не против поговорить</option>
+                <option id="">Не трогайте меня</option>
+            </select>
+        </div>
+        <div>
+            Желаемая з/п
+            <input class="form" type="number" placeholder='введите значение...'>
+        </div>
+        <div>
+            Подходит по критериям:
+            <div>
+                <input class="option-input" type="checkbox" name="" id="english">
+                <label for="english">Знание английского</label>
+
+                <input class="option-input" type="checkbox" name="" id="zp">
+                <label for="zp">Оклад</label>
+
+                <input class="option-input" type="checkbox" name="" id="skils">
+                <label for="skils">Навыки</label>
+
+                <input class="option-input" type="checkbox" name="" id="mark">
+                <label for="mark">Сразу видно что, свой человек</label>
+            </div>
+        </div>
+        <div>
+            <table>
+                <caption>Образование, курсы и т.п.</caption>
+                <tr>
+                    <th class="namberCell">№</th>
+                    <th>Срок обучения</th>
+                    <th>Наименование учебного заведения, курсов и т.п.</th>
+                </tr>
+                <tr>
+                    <td class="namberCell">1</td>
+                    <td contenteditable='true'></td>
+                    <td contenteditable='true'></td>
+                </tr>
+                <tr>
+                    <td class="namberCell">2</td>
+                    <td contenteditable='true'></td>
+                    <td contenteditable='true'></td>
+                </tr>
+                <tr>
+                    <td class="namberCell">3</td>
+                    <td contenteditable='true'></td>
+                    <td contenteditable='true'></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <input type="submit" value="Распечатать">
+        </div>
+    </form>
 </body>
 
 </html>
